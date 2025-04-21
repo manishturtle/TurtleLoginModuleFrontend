@@ -1,0 +1,74 @@
+{
+  "name": "tenant-login-module-frontend",
+  "version": "1.0.0",
+  "description": "A reusable platform admin login component for React applications",
+  "type": "module",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs.js"
+    }
+  },
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "keywords": [
+    "react",
+    "login",
+    "admin",
+    "authentication",
+    "mui"
+  ],
+  "author": "manish@turtlesoftware.co",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/turtlesoftware/tenant-login-module-frontend"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "rollup -c rollup.config.mjs",
+    "prepare": "npm run build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.17.1",
+    "@mui/material": "^5.14.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.17.1",
+    "@mui/material": "^5.14.0",
+    "@mui/x-date-pickers": "^7.28.0",
+    "axios": "^1.5.0",
+    "date-fns": "^2.29.3",
+    "framer-motion": "^10.16.0",
+    "next": "^15.2.3",
+    "otpauth": "^9.3.6",
+    "prop-types": "^15.8.1",
+    "qrcode.react": "^4.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-react": "^7.26.3",
+    "@babel/preset-typescript": "^7.27.0",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "rollup": "^4.40.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "typescript": "^5.8.3"
+  }
+}
