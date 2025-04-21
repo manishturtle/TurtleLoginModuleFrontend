@@ -24,7 +24,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/turtlesoftware/tenant-login-module-frontend"
+    "url": "https://github.com/manishturtle/TurtleLoginModuleFrontend.git"
   },
   "scripts": {
     "dev": "next dev",
